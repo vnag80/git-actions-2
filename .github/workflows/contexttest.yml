@@ -1,0 +1,8 @@
+name: contexttest
+on: workflow-dispatch
+jobs:
+  test:
+     runs-on: ubuntu-latest
+     steps:
+        - name: testing variables
+          run: echo "Testing ${{toJSON(github)}}"
